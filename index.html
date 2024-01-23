@@ -8,27 +8,27 @@
     <meta name="description" content="Esta es una página de manga que contiene la introducción de la historia, los personajes con sus características y algunos capítulos.">
     <meta name="keywords" content="Sombras del Espejismo, magia, espejo, manga, Kai Sombraestelar, Luna Nocturna, Sylvia Garrafulgurante, Víctor Umbríalobo, Sombras Espirituales, Dama Umbría">
     <!-- <meta http-equiv="cookie" content="user=nataliaschwindt; expires="> -->
-    <meta property="og:title" content="Manga: Sombras del Espejismo" />
+    <meta property="og:title" content="Manga: Sombras del Espejismo"/>
     <meta property=”og:description” content=”Descubre el fascinante mundo de las Sombras del Espejismo. Un mundo donde la magia y la realidad se fusionan.”/>
-    <meta property=”og:url” content=”*” /><!--Agregar URL del sitio en "content"-->
-    <meta property=”og:image” content=”*” /><!--Agregar URL de la imágen en "content"-->
-    <meta property=»og:site_name» content=»Manga: Sombras del Espejismo» />
+    <meta property=”og:url” content=” ”/><!--Agregar URL del sitio en "content"-->
+    <meta property=”og:image” content=” ”/><!--Agregar URL de la imágen en "content"-->
+    <meta property="og:site_name" content="Manga: Sombras del Espejismo"/>
     <link rel="stylesheet" href="style.css">
     <!--Metas-->
     <title>Proyecto Final Frontend</title>
 </head>
 <body>
-    <header>
+    <header class="hero">
         <nav>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+            <ul class="navbar">
+                <li><a href="https://www.linkedin.com/in/natalia-schwindt-3a3438115/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/Natalia-Schwindt" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="mailto:naty8014@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
             </ul>
         </nav>
         <h1>Sombras del Espejismo</h1>
         <figure>
-            <img src="./assets/giro1apaisado.jpg" alt="Sombras del Espejismo">
+            <img loading="lazy" src="./assets/giro1apaisado.jpg" alt="Sombras del Espejismo">
         </figure>
     </header>
     <main>
@@ -38,22 +38,22 @@
         </section>
         <section>
             <figure>
-                <a href="./damaumbria.html"><img src="./assets/DamaUmbría.jpg" alt="Dama Umbría"></a>
+                <a href="./damaumbria.html"><img loading="lazy"  src="./assets/DamaUmbría.jpg" alt="Dama Umbría"></a>
             </figure>
             <figure>
-                <a href="./kaisombraestelar.html"><img src="./assets/KaiSombraestelar.jpg" alt="Kai Sombraestelar"></a>
+                <a href="./kaisombraestelar.html"><img loading="lazy" src="./assets/KaiSombraestelar.jpg" alt="Kai Sombraestelar"></a>
             </figure>
             <figure>
-                <a href="./lunanocturna.html"><img src="./assets/LunaNocturna.jpg" alt="Luna Nocturna"></a>
+                <a href="./lunanocturna.html"><img loading="lazy" src="./assets/LunaNocturna.jpg" alt="Luna Nocturna"></a>
             </figure>
             <figure>
-                <a href="./sombrasespirituales.html"><img src="./assets/SombrasEspirituales.jpg" alt="Sombras Espirituales"></a>
+                <a href="./sombrasespirituales.html"><img loading="lazy" src="./assets/SombrasEspirituales.jpg" alt="Sombras Espirituales"></a>
             </figure>
             <figure>
-                <a href="./sylviagarrafulgurante.html"><img src="./assets/SylviaGarrafulgurante.jpg" alt="Sylvia Garrafulgurante"></a>
+                <a href="./sylviagarrafulgurante.html"><img loading="lazy" src="./assets/SylviaGarrafulgurante.jpg" alt="Sylvia Garrafulgurante"></a>
             </figure>
             <figure>
-                <a href="./victorumbrialobo.html"><img src="./assets/VíctorUmbríalobo.jpg" alt="Víctor Umbríalobo"></a>
+                <a href="./victorumbrialobo.html"><img loading="lazy" src="./assets/VíctorUmbríalobo.jpg" alt="Víctor Umbríalobo"></a>
             </figure>
         </section>
         <section>
@@ -129,19 +129,24 @@
         <section>
             <form action="">
 
+                <label for="nombre">Escribe tu nombre</label>
+                <input type="text" placeholder="" maxlength="" name="nombre">
+
+                <label for="apellido">Escribe tu apellido</label>
+                <input type="text" placeholder="" maxlength="" name="apellido">
+
+                <label for="">Escribe el mensaje</label>
+                <input type="textarea" name="" id="" rezise="none">
             </form>
         </section>
         <a href="">Volver</a>
     </main>
-    <footer>
-        <p></p>
-        <nav>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </nav>
+    <footer class="piedepagina">
+        <a href="https://www.linkedin.com/in/natalia-schwindt-3a3438115/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Natalia-Schwindt" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:naty8014@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        <p>&#174 Natalia Schwindt - 2024</p>
     </footer>
+    <script src="https://kit.fontawesome.com/eb8debf0a8.js" crossorigin="anonymous"></script>
 </body>
 </html>

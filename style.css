@@ -1,0 +1,49 @@
+:root{
+    --color-fondo-verde: rgb(11, 37, 23);
+    --color-fondo-navbar: #7e6b58;
+    --color-fondo-body: rgb(22, 22, 22);
+    --color-texto: rgba(248, 250, 248, 0.733);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--color-fondo-body);
+    color: var(--color-texto);
+    max-width: 767px;
+}
+.hero{
+    width: 100%;
+}
+.hero img{
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+a{
+    color: var(--color-fondo-navbar);
+}
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+section img{
+    max-width: 200px;
+}
+header figure{
+    background-color: var(--color-fondo-verde);
+}
+.piedepagina{
+    background-color: var(--color-fondo-verde);
+}
