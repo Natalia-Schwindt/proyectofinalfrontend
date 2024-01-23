@@ -16,17 +16,27 @@ body{
     max-width: 767px;
 }
 .hero{
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    background-color: var(--color-fondo-verde);
 }
 .hero img{
-    width: 100%;
+    display: flex;
+    margin: 0 auto 50px;
+    width: 85%;
+}
+.hero h1{
+    display: flex;
+    margin: 10px auto 20px;
+    color: #d5be9c;
 }
 .navbar{
     display: flex;
     justify-content: flex-end;
     list-style: none;
     gap: 10px;
-    margin: 10px;
+    padding: 15px;
     font-size: 20px;
 }
 a{
@@ -37,12 +47,10 @@ section{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
+
 }
 section img{
     max-width: 200px;
-}
-header figure{
-    background-color: var(--color-fondo-verde);
 }
 .piedepagina{
     background-color: var(--color-fondo-verde);
