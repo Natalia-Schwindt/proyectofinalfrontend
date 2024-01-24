@@ -1,6 +1,7 @@
 :root{
     --color-fondo-verde: rgb(11, 37, 23);
-    --color-fondo-navbar: #7e6b58;
+    --color-dorado-oscuro: #7e6b58;
+    --color-dorado-claro: #d5be9c;
     --color-fondo-body: rgb(22, 22, 22);
     --color-texto: rgba(248, 250, 248, 0.733);
 }
@@ -29,7 +30,7 @@ body{
 .hero h1{
     display: flex;
     margin: 10px auto 20px;
-    color: #d5be9c;
+    color: var(--color-dorado-claro);
 }
 .navbar{
     display: flex;
@@ -40,17 +41,21 @@ body{
     font-size: 20px;
 }
 a{
-    color: var(--color-fondo-navbar);
+    color: var(--color-dorado-oscuro);
 }
 section{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
-
+    color: var(--color-dorado-claro);
 }
 section img{
     max-width: 200px;
+}
+.sombraPersonaje{
+    filter: drop-shadow(10px 8px 5px #8c847638 );
 }
 .piedepagina{
     background-color: var(--color-fondo-verde);
