@@ -1,9 +1,14 @@
+@import url(https://db.onlinewebfonts.com/c/556e5a11f95d763eaa211cb1a793d8de?family=Caxton+W01+Book+Italic);
+@import url(https://db.onlinewebfonts.com/c/661bf1532b87a1df22906f51cfe17e93?family=ITC+Medea+W01+Extra+Bold);
+ 
  :root{
     --color-fondo-verde: rgb(11, 37, 23);
     --color-dorado-oscuro: #7e6b58;
     --color-dorado-claro: #d5be9c;
     --color-fondo-body: rgb(22, 22, 22);
-    --color-texto: rgba(248, 250, 248, 0.733);
+    --color-sombra-personaje:  #76504765 ;
+    --texto-principal: "Caxton W01 Book Italic";
+    --texto-secundario: "ITC Medea W01 Extra Bold";
 }
 
 body{
@@ -37,7 +42,7 @@ body{
     position: absolute;
     top: 40px;
     left: 20px;
-    width: 200px;
+    width: 220px;
     background-color: var(--color-fondo-verde);
   }
   .menu ul {
@@ -62,6 +67,7 @@ body{
 .hero h1{
     display: flex;
     margin: 0 auto 20px;
+    font-family: var(--texto-principal);
     font-size: 1.9rem;
     color: var(--color-dorado-claro);
 }
@@ -80,10 +86,12 @@ section{
 }
 section h2{
     font-size: 30px;
+    font-family: var(--texto-principal);
     margin: 30px auto 15px;
 }
 section p{
     font-size: 18px;
+    font-family: var(--texto-secundario);
     margin: 0 15px 20px;
 }
 section img{
@@ -91,28 +99,27 @@ section img{
     box-shadow: 5px 5px 12px var(--color-dorado-oscuro);
     margin-bottom: 15px;
 }
-/* .sombraPersonaje{
-    filter: drop-shadow(10px 8px 5px #8c847600 );
-} */
 .capitulos{
     display: flex;
     flex-direction: column;
     margin: 0 20px 30px;
     font-size: 1.2rem;
+    font-family: var(--texto-principal);
 }
 .formulario{
     background-color: #7e6b58;
     padding: 20px 0;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
 }
 form{
     display: flex;
     flex-direction: column;
-    width: 75%;
-    gap: 20px;
+    width: 70%;
+    gap: 15px;
 }
-.mensaje{
-    padding: 20px;
+textarea {
+    resize: none;
+    margin-top: 5px;
 }
 .boton{
     transform: translate(110%);
@@ -124,6 +131,8 @@ form{
     justify-content: center;
     margin: 20px;
     text-decoration: none;
+    font-family: var(--texto-principal);
+    color: var(--color-dorado-claro);
 }
 a{
     font-size: 1.3rem;
@@ -138,4 +147,29 @@ a{
     padding: 20px;
     font-size: 1.3rem;
     color: var(--color-dorado-oscuro);
+}
+
+/* Personajes */
+
+.personaje h1{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 20px;
+    font-size: 1.9rem;
+    color: var(--color-dorado-claro);
+}
+.sombraPersonaje{
+    filter: drop-shadow(12px 12px 5px var(--color-sombra-personaje));
+}
+.personaje h3{
+    margin: 20px auto 20px;
+    font-size: 1.2rem;
+    color: var(--color-dorado-claro);
+}
+.personaje p{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 20px;
+    font-size: 1rem;
+    color: var(--color-dorado-claro);
 }
