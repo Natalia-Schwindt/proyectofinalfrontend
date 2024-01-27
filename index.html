@@ -6,10 +6,10 @@
     <meta name="metadato" content="valor">
     <meta name="author" content="natalia schwindt">
     <meta name="description" content="Esta es una página de manga que contiene la introducción de la historia, los personajes con sus características y algunos capítulos.">
-    <meta name="keywords" content="Sombras del Espejismo, magia, espejo, manga, Kai Sombraestelar, Luna Nocturna, Sylvia Garrafulgurante, Víctor Umbríalobo, Sombras Espirituales, Dama Umbría">
+    <meta name="keywords" content="Espejismo de las Sombras, magia, espejo, manga, Kai Sombraestelar, Luna Nocturna, Sylvia Garrafulgurante, Víctor Umbríalobo, Sombras Espirituales, Dama Umbría">
     <!-- <meta http-equiv="cookie" content="user=nataliaschwindt; expires="> -->
     <meta property="og:title" content="Manga: Sombras del Espejismo"/>
-    <meta property=”og:description” content=”Descubre el fascinante mundo de las Sombras del Espejismo. Un mundo donde la magia y la realidad se fusionan.”/>
+    <meta property=”og:description” content=”Descubre el fascinante mundo del Espejismo de las Sombras. Un mundo donde la magia y la realidad se fusionan.”/>
     <meta property=”og:url” content=” ”/><!--Agregar URL del sitio en "content"-->
     <meta property=”og:image” content=” ”/><!--Agregar URL de la imágen en "content"-->
     <meta property="og:site_name" content="Manga: Sombras del Espejismo"/>
@@ -18,18 +18,28 @@
     <title>Sombras del Espejismo</title>
 </head>
 <body>
-    <header class="hero">
-        <nav>
-            <ul class="navbar">
-                <li><a href="https://www.linkedin.com/in/natalia-schwindt-3a3438115/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/Natalia-Schwindt" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="mailto:naty8014@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
-            </ul>
-        </nav>
-        <h1>Sombras del Espejismo</h1>
-        <figure>
-            <img loading="lazy" src="./assets/giro1apaisado.jpg" alt="Sombras del Espejismo">
-        </figure>
+    <header class="hero"  id="volver">
+
+        <div class="menu-container">
+            <label for="toggle" class="button"><i class="fas fa-bars"></i></label>
+            <nav class="menu">
+                <ul>
+                <li><a href="./kaisombraestelar.html">Kai Sombraestelar</a></li>
+                <li><a href="./lunanocturna.html">Luna Nocturna</a></li>
+                <li><a href="./sylviagarrafulgurante.html">Sylvia Garrafulgurante</a></li>
+                <li><a href="./damaumbria.html">Dama Umbría</a></li>
+                <li><a href="./sombrasespirituales.html">Sombras Espirituales</a></li>
+                <li><a href="./victorumbrialobo.html">Víctor Umbríalobo</a></li>
+              </ul>
+            </nav>
+        </div>
+
+        <h1>Espejismo de las Sombras</h1>
+        <picture>
+            <source srcset="./assets/giro-769.png" media="(min-width: 780px)">
+            <source srcset="./assets/giro-1024.png" media="(min-width: 1024px)">
+            <img loading="lazy" src="./assets/giro-480.png" alt="Espejismo de las Sombras">
+        </picture>
     </header>
     <main>
         <section>
@@ -56,7 +66,7 @@
                 <a href="./victorumbrialobo.html"><img loading="lazy" src="./assets/VíctorUmbríalobo.jpg" alt="Víctor Umbríalobo"></a>
             </figure>
         </section>
-        <section>
+        <section class="capitulos">
             <details>
                 <summary>Inicio de la Historia:</summary>
                 <div>
@@ -80,7 +90,7 @@
                     <p>Luna: Una sombra espiritual. Un indicio de que algo anda mal. (con determinación) Debemos cerrar esas grietas antes de que el equilibrio se rompa.</p>
                     <p>A pesar de la reticencia inicial, Kai aceptó la misión, reconociendo la urgencia de la tarea.</p>
                     <p>Kai: Está bien, Luna Nocturna. Cerraré esas grietas contigo.</p>
-                    <p>Juntos, se adentraron en la aventura, listos para enfrentar las sombras y cerrar las distorsiones entre las realidades. Así comenzó la travesía de "Sombras del Espejismo", una historia de misterio, magia y dualidad.</p>
+                    <p>Juntos, se adentraron en la aventura, listos para enfrentar las sombras y cerrar las distorsiones entre las realidades. Así comenzó la travesía del "Espejismo de las Sombras", una historia de misterio, magia y dualidad.</p>
                     </div>
             </details>
             <details>
@@ -126,7 +136,7 @@
                 </div>
             </details>
         </section>
-        <section>
+        <section class="formulario">
             <form action="">
 
                 <label for="nombre">Escribe tu nombre</label>
@@ -135,18 +145,21 @@
                 <label for="apellido">Escribe tu apellido</label>
                 <input type="text" placeholder="" maxlength="" name="apellido">
 
-                <label for="">Escribe el mensaje</label>
-                <input type="textarea" name="" id="" rezise="none">
+                <label for="mensaje">Escribe el mensaje</label>
+                <input type="textarea" name="mensaje" class="mensaje" rezise="none">
 
-                <input type="button" value="Enviar">
+                <input type="button" value="Enviar" class="boton">
+
             </form>
         </section>
-        <a href="">Volver</a>
+        <a href="#volver" class="volver">Volver</a>
     </main>
     <footer class="piedepagina">
-        <a href="https://www.linkedin.com/in/natalia-schwindt-3a3438115/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/Natalia-Schwindt" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="mailto:naty8014@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        <div>
+            <a href="https://www.linkedin.com/in/natalia-schwindt-3a3438115/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Natalia-Schwindt" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:naty8014@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        </div>
         <p>&#174 Natalia Schwindt - 2024</p>
     </footer>
     <script src="https://kit.fontawesome.com/eb8debf0a8.js" crossorigin="anonymous"></script>

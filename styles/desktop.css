@@ -1,0 +1,5 @@
+section img:hover{
+    max-width: 102px;
+    box-shadow: 8px 8px 12px var(--color-dorado-oscuro);
+    transition: 0.2s;
+}
