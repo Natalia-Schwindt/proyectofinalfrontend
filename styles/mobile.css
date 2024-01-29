@@ -76,6 +76,50 @@ body{
     margin: 0 auto;
     width: 100%;
 }
+/* Personajes */
+.personaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fondoPersonaje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: rgba(246, 205, 152, 0.318);
+}
+.personaje h1{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 20px;
+    font-family: var(--texto-principal);
+    font-size: 1.9rem;
+    color: var(--color-dorado-claro);
+}
+.personajeImg{
+    width: 90%;
+}
+.personaje h3{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 5px;
+    font-family: var(--texto-principal);
+    font-size: 1.3rem;
+    color: var(--color-dorado-claro);
+}
+.personaje p{
+    display: flex;
+    justify-content: center;
+    margin: 20px 5px 20px;
+    font-family: var(--texto-secundario);
+    font-size: 1rem;
+    color: var(--color-dorado-claro);
+} 
+/* Fin personajes */
 section{
     display: flex;
     flex-direction: row;
@@ -147,29 +191,4 @@ a{
     padding: 20px;
     font-size: 1.3rem;
     color: var(--color-dorado-oscuro);
-}
-
-/* Personajes */
-
-.personaje h1{
-    display: flex;
-    justify-content: center;
-    margin: 20px auto 20px;
-    font-size: 1.9rem;
-    color: var(--color-dorado-claro);
-}
-.sombraPersonaje{
-    filter: drop-shadow(12px 12px 5px var(--color-sombra-personaje));
-}
-.personaje h3{
-    margin: 20px auto 20px;
-    font-size: 1.2rem;
-    color: var(--color-dorado-claro);
-}
-.personaje p{
-    display: flex;
-    justify-content: center;
-    margin: 20px auto 20px;
-    font-size: 1rem;
-    color: var(--color-dorado-claro);
 }
