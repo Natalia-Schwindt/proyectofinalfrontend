@@ -122,11 +122,14 @@ body{
 /* Fin personajes */
 section{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-dorado-claro);
+}
+section div:first-of-type{
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
-    color: var(--color-dorado-claro);
 }
 section h2{
     font-size: 30px;
@@ -158,15 +161,15 @@ section img{
 form{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    align-items: center;
+    width: 100%;
     gap: 15px;
 }
-textarea {
+textarea:first-of-type {
     resize: none;
-    margin-top: 5px;
+    margin: 5px 0;
 }
 .boton{
-    transform: translate(110%);
     width: 30%;
 }
 
