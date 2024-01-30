@@ -36,3 +36,16 @@
     left: 30px;
     font-size: 60px;
 }
+section img{
+    max-width: 200px;
+}
+
+input{
+    width: 70%;
+}
+textarea:first-of-type{
+    width: 70%;
+}
+.boton{
+    width: 25%;
+}

@@ -153,6 +153,12 @@ section img{
     font-size: 1.2rem;
     font-family: var(--texto-principal);
 }
+.capitulos div:nth-of-type(n){
+    justify-content: flex-start;
+}
+
+/* Formulario */
+
 .formulario{
     background-color: #7e6b58;
     padding: 20px 0;
@@ -165,13 +171,20 @@ form{
     width: 100%;
     gap: 15px;
 }
+input{
+    width: 85%;
+}
 textarea:first-of-type {
     resize: none;
-    margin: 5px 0;
+    width: 85%;
+    height: 30vh;
+    box-sizing: border-box;
 }
 .boton{
     width: 30%;
 }
+
+/* Fin formulario */
 
 .volver{
     display: flex;
