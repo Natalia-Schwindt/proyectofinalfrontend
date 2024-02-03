@@ -15,15 +15,18 @@
     <meta property="og:site_name" content="Manga: Sombras del Espejismo"/>
     <link rel="stylesheet" href="./styles/style.css">
     <!--Metas-->
-    <title>Sombras del Espejismo</title>
+    <title>Espejismo de las Sombras</title>
 </head>
 <body>
     <header class="hero"  id="volver">
 
-        <div class="menu-container">
-            <label class=" button"><i class="fas fa-bars"></i></label>
-            <nav class="menu">
-                <ul>
+        <nav id="menu">
+            <div class="iconMenu">
+                <a href="#menu" class="open"><i class="fas fa-bars"></i></a>
+                <a href="#" class="close"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            
+            <ul class="linksMenu">
                 <li><a href="./kaisombraestelar.html">Kai Sombraestelar</a></li>
                 <li><a href="./lunanocturna.html">Luna Nocturna</a></li>
                 <li><a href="./sylviagarrafulgurante.html">Sylvia Garrafulgurante</a></li>
@@ -31,15 +34,9 @@
                 <li><a href="./sombrasespirituales.html">Sombras Espirituales</a></li>
                 <li><a href="./victorumbrialobo.html">Víctor Umbríalobo</a></li>
               </ul>
-            </nav>
-        </div>
+        </nav>
 
         <h1>Espejismo de las Sombras</h1>
-        <picture>
-            <source srcset="./assets/giro-769.png" media="(min-width: 760px)">
-            <source srcset="./assets/giro-1024.jpg" media="(min-width: 1024px)">
-            <img loading="lazy" src="./assets/giro-480.png" alt="Espejismo de las Sombras">
-        </picture>
     </header>
     <main>
         <section>
@@ -160,11 +157,11 @@
     </main>
     <footer class="piedepagina">
         <div>
-            <a href="https://www.linkedin.com/in/natalia-schwindt-3a3438115/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/Natalia-Schwindt" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="mailto:naty8014@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/natalia-schwindt-3a3438115/" target="_blank"><i title="Linkedin" class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Natalia-Schwindt" target="_blank"><i title="GitHub" class="fa-brands fa-github"></i></a>
+            <a href="mailto:naty8014@gmail.com" target="_blank"><i title="Email" class="fa-solid fa-envelope"></i></a>
         </div>
-        <p>&#174; Natalia Schwindt - 2024</p>
+        <p>&copy; Natalia Schwindt - 2024</p>
     </footer>
     <script src="https://kit.fontawesome.com/eb8debf0a8.js" crossorigin="anonymous"></script>
 </body>

@@ -7,60 +7,88 @@
     --color-dorado-claro: #d5be9c;
     --color-fondo-body: rgb(22, 22, 22);
     --color-sombra-personaje:  #76504765 ;
+    --color-nav: rgba(255, 255, 255, 0.5);
     --texto-principal: "Caxton W01 Book Italic";
     --texto-secundario: "ITC Medea W01 Extra Bold";
 }
 
 body{
     background-color: var(--color-fondo-body);
-    color: var(--color-texto);
 }
 .hero{
-    display: flex;
-    flex-direction: column;
+    height: 50vh;
     width: 100%;
-    background-color: var(--color-fondo-verde);
+    background: url(../assets/giro-480.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: .1px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
 }
 
 /* Menú hamburguesa desplegable */
 
-.menu-container {
-    position: relative;
-    display: inline-block; /* Permite que el menú se muestre al lado del ícono */
-  }
-  .button {
+nav{
+    background-color: var(--color-nav);
+    backdrop-filter: blur(1px);
     display: flex;
-    align-items: center; /* Alinea el icono verticalmente con el texto */
-    margin: 20px;
-    font-size: 20px;
-    color: var(--color-dorado-claro);
-    cursor: pointer;
-  }
-  .menu {
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    align-self: flex-start;
+}
+
+.iconMenu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.iconMenu a i{
+    padding: 20px;
+    color: var(--color-fondo-verde);
+}
+
+.linksMenu{
     display: none;
-    position: absolute;
-    top: 40px;
-    left: 20px;
-    width: 220px;
-    background-color: var(--color-fondo-verde);
-  }
-  .menu ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .menu li {
-    padding: 15px;
-    text-align: center;
-  }
-  .menu a {
+}
+
+.linksMenu li a{
     text-decoration: none;
-    color: var(--color-dorado-claro);
-    font-size: 18px;
-  }
-  .menu-container:hover .menu {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--color-fondo-verde);
+    text-transform: uppercase;
+}
+
+#menu:target .linksMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-nav);
+    backdrop-filter: blur(1px);
+    gap: 20px;
+    width: 100%;
+    height: 25vh;
+    padding: 20px;
+    margin: 0;
+}
+
+.close{
+    display: none;
+}
+
+#menu:target .open{
+    display: none;
+}
+
+#menu:target .close{
     display: block;
-  }
+}
+
 /* Fin menú hamburguesa */
 
 .hero h1{
@@ -76,7 +104,9 @@ body{
     width: 100%;
     object-fit: cover;
 }
+
 /* Personajes */
+
 .personaje{
     display: flex;
     flex-direction: column;
@@ -120,12 +150,14 @@ body{
     color: var(--color-dorado-claro);
 } 
 /* Fin personajes */
+
 section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: var(--color-dorado-claro);
 }
+
 section div:first-of-type{
     display: flex;
     justify-content: center;
@@ -181,7 +213,7 @@ textarea:first-of-type {
     box-sizing: border-box;
 }
 .boton{
-    width: 30%;
+    width: 85%;
 }
 
 /* Fin formulario */
