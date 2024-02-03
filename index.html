@@ -13,6 +13,8 @@
     <meta property=”og:url” content=” ”/><!--Agregar URL del sitio en "content"-->
     <meta property=”og:image” content=” ”/><!--Agregar URL de la imágen en "content"-->
     <meta property="og:site_name" content="Manga: Sombras del Espejismo"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
     <!--Metas-->
     <title>Espejismo de las Sombras</title>
@@ -36,7 +38,7 @@
               </ul>
         </nav>
 
-        <h1>Espejismo de las Sombras</h1>
+        <h1 class="animate__animated animate__backInDown">Espejismo de las Sombras</h1>
     </header>
     <main>
         <section>
@@ -46,22 +48,22 @@
         <section>
             <h2>Personajes</h2>
             <div>
-            <figure>
+            <figure data-aos="zoom-in-up">
                 <a href="./damaumbria.html"><img loading="lazy"  src="./assets/DamaUmbría.jpg" alt="Dama Umbría"></a>
             </figure>
-            <figure>
+            <figure data-aos="zoom-in-up">
                 <a href="./kaisombraestelar.html"><img loading="lazy" src="./assets/KaiSombraestelar.jpg" alt="Kai Sombraestelar"></a>
             </figure>
-            <figure>
+            <figure data-aos="zoom-in-up">
                 <a href="./lunanocturna.html"><img loading="lazy" src="./assets/LunaNocturna.jpg" alt="Luna Nocturna"></a>
             </figure>
-            <figure>
+            <figure data-aos="zoom-in-up">
                 <a href="./sombrasespirituales.html"><img loading="lazy" src="./assets/SombrasEspirituales.jpg" alt="Sombras Espirituales"></a>
             </figure>
-            <figure>
+            <figure data-aos="zoom-in-up">
                 <a href="./sylviagarrafulgurante.html"><img loading="lazy" src="./assets/SylviaGarrafulgurante.jpg" alt="Sylvia Garrafulgurante"></a>
             </figure>
-            <figure>
+            <figure data-aos="zoom-in-up">
                 <a href="./victorumbrialobo.html"><img loading="lazy" src="./assets/VíctorUmbríalobo.jpg" alt="Víctor Umbríalobo"></a>
             </figure>
         </div>
@@ -164,5 +166,7 @@
         <p>&copy; Natalia Schwindt - 2024</p>
     </footer>
     <script src="https://kit.fontawesome.com/eb8debf0a8.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>

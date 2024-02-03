@@ -16,7 +16,7 @@ body{
     background-color: var(--color-fondo-body);
 }
 .hero{
-    height: 50vh;
+    height: 40vh;
     width: 100%;
     background: url(../assets/giro-480.png);
     background-repeat: no-repeat;
@@ -92,15 +92,14 @@ nav{
 /* Fin menú hamburguesa */
 
 .hero h1{
-    display: flex;
-    margin: 0 auto 20px;
+    display: inline-block;
     font-family: var(--texto-principal);
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     color: var(--color-dorado-claro);
+    animation-duration: 2s;
 }
 .hero img{
     display: flex;
-    margin: 0 auto;
     width: 100%;
     object-fit: cover;
 }
