@@ -1,5 +1,34 @@
-/* section img:hover{
-    max-width: 102px;
-    box-shadow: 8px 8px 12px var(--color-dorado-oscuro);
-    transition: 0.2s;
-} */
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: url(../assets/giroModificado1024.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: .1px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    z-index: 10;
+}
+
+.iconMenu{
+    display: none;
+}
+
+.linksMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.hero h1{
+    bottom: 100px;
+    left: 30%;
+}
+
+form{
+    align-items: flex-start;
+}
