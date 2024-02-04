@@ -9,7 +9,6 @@
     display: flex;
     justify-content: center;
     align-items:flex-end;
-    z-index: 10;
 }
 
 .iconMenu{
@@ -29,6 +28,44 @@
     left: 30%;
 }
 
+.fondoPersonaje{
+    width: 40%;
+}
+
+.personaje h2{
+    margin: 50px auto 0;
+    font-size: 2.5rem;
+}
+
+.personajeImg{
+    width: 100%;
+    height: 800px;
+}
+
+.personajeImg:hover{
+    filter: drop-shadow(10px 10px 8px rgb(197, 195, 183));
+}
+
 form{
     align-items: flex-start;
+}
+
+.personaje h3{
+    margin: 50px auto 5px;
+    font-size: 2rem;
+}
+
+.personaje p{
+    text-align: justify;
+    margin: 20px 40px;
+    font-size: 1.2rem;
+}
+
+.volver{
+    font-size: 30px;
+}
+
+a{
+    font-size: 30px;
+    margin: 10px;
 }
