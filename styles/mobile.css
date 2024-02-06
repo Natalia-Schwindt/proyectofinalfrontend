@@ -1,6 +1,6 @@
 @import url(https://db.onlinewebfonts.com/c/556e5a11f95d763eaa211cb1a793d8de?family=Caxton+W01+Book+Italic);
 @import url(https://db.onlinewebfonts.com/c/661bf1532b87a1df22906f51cfe17e93?family=ITC+Medea+W01+Extra+Bold);
- 
+
  :root{
     --color-fondo-verde: rgb(11, 37, 23);
     --color-dorado-oscuro: #7e6b58;
@@ -16,16 +16,16 @@ body{
     background-color: var(--color-fondo-body);
 }
 .hero{
-    height: 40vh;
-    width: 100%;
-    background: url(../assets/giro-480.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: .1px;
     display: flex;
     justify-content: center;
     align-items:flex-end;
-    
+    width: 100%;
+    height: 40dvh;
+    background: url(../assets/giro-480.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    padding: .1px;
 }
 
 /* Menú hamburguesa desplegable */
@@ -60,7 +60,7 @@ nav{
 
 .linksMenu li a{
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 700;
     color: var(--color-fondo-verde);
     text-transform: uppercase;
@@ -98,59 +98,13 @@ nav{
     font-family: var(--texto-principal);
     font-size: 1.5rem;
     color: var(--color-dorado-claro);
-    animation-duration: 2s;
+    animation-duration: 1.5s;
 }
 .hero img{
     display: flex;
     width: 100%;
     object-fit: cover;
 }
-
-/* Personajes */
-
-.personaje{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.fondoPersonaje{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    border-radius: 0 0 30px 30px;
-    margin-top: 20px;
-    background-color: rgba(246, 205, 152, 0.318);
-}
-.personaje h2{
-    display: flex;
-    justify-content: center;
-    margin: 20px auto 20px;
-    font-family: var(--texto-principal);
-    font-size: 1.9rem;
-    color: var(--color-dorado-claro);
-}
-.personajeImg{
-    width: 90%;
-}
-.personaje h3{
-    display: flex;
-    justify-content: center;
-    margin: 20px auto 5px;
-    font-family: var(--texto-principal);
-    font-size: 1.3rem;
-    color: var(--color-dorado-claro);
-}
-.personaje p{
-    display: flex;
-    justify-content: center;
-    margin: 20px 5px 20px;
-    font-family: var(--texto-secundario);
-    font-size: 1rem;
-    color: var(--color-dorado-claro);
-} 
-/* Fin personajes */
 
 section{
     display: flex;
@@ -194,7 +148,6 @@ section img{
 
 .formulario{
     background-color: #7e6b58;
-    padding: 20px 0;
     font-size: 1.25rem;
 }
 form{
@@ -215,6 +168,7 @@ textarea:first-of-type {
 }
 .boton{
     width: 85%;
+    margin-bottom: 15px;
 }
 
 /* Fin formulario */
@@ -237,7 +191,108 @@ a{
     justify-content: space-around;
     align-items: center;
     background-color: var(--color-fondo-verde);
-    padding: 20px;
-    font-size: 1.3rem;
+    padding: 30px 0;
+    font-size: 1rem;
     color: var(--color-dorado-oscuro);
+}
+
+/* Personajes */
+
+.personaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fondoPersonaje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    border-radius: 0 0 30px 30px;
+    margin-top: 20px;
+    background-color: rgba(246, 205, 152, 0.318);
+}
+.fondoPersonaje h2{
+    margin: 20px auto 20px;
+    font-family: var(--texto-principal);
+    font-size: 1.3rem;
+    color: var(--color-dorado-claro);
+}
+.personajeImg{
+    width: 90%;
+}
+.personaje h3{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 5px;
+    font-family: var(--texto-principal);
+    font-size: 1.3rem;
+    color: var(--color-dorado-claro);
+}
+.personaje p{
+    display: flex;
+    justify-content: center;
+    margin: 20px 5px 20px;
+    font-family: var(--texto-secundario);
+    font-size: 1rem;
+    color: var(--color-dorado-claro);
+}
+/* Fin personajes */
+
+@media screen and (min-width: 400px){
+    .hero{
+        height: 50dvh;
+    }
+    .hero h1{
+        font-size: 1.7rem;
+    }
+    .fondoPersonaje h2{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 500px){
+    .hero{
+        height: 60dvh;
+    }
+    .linksMenu li a{
+        font-size: 1.2em;
+    }
+    .hero h1{
+        font-size: 1.9rem;
+    }
+    .piedepagina{
+        font-size: 1.5rem;
+    }
+    .fondoPersonaje h2{
+        font-size: 1.7rem;
+    }
+}
+@media screen and (min-width: 600px){
+    .hero{
+        height: 70dvh;
+    }
+    .hero h1{
+        font-size: 2.2rem;
+    }
+    .fondoPersonaje h2{
+        font-size: 1.9rem;
+    }
+}
+@media screen and (min-width: 700px){
+    .hero{
+        height: 80dvh;
+    }
+    .hero h1{
+        font-size: 2.5rem;
+    }
+    section img{
+        max-width: 200px;
+    }
+    .piedepagina{
+        font-size: 1.8rem;
+    }
+    .fondoPersonaje h2{
+        font-size: 2.2rem;
+    }
 }

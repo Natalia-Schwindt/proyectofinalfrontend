@@ -1,3 +1,20 @@
+/* .hero{
+    height: 70vh;
+    width: 100%;
+    background: url(../assets/giroModificado768.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: .1px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+.hero h1{
+
+    bottom: 50px;
+    left: 30px;
+    font-size: 40px;
+}
 .menu-container {
     position: relative;
     width: 100%;
@@ -28,15 +45,7 @@
     color: var(--color-dorado-claro);
     font-size: 18px;
 }
-.hero{
-    position: relative;
-}
-.hero h1{
-    position: absolute;
-    bottom: 150px;
-    left: 30px;
-    font-size: 60px;
-}
+
 section img{
     max-width: 200px;
 }
@@ -53,4 +62,4 @@ textarea:first-of-type{
 .fondoPersonaje{
     width: 60%;
     margin-top: 50px;
-}
+} */
