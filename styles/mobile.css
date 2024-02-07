@@ -8,6 +8,7 @@
     --color-fondo-body: rgb(22, 22, 22);
     --color-sombra-personaje:  #76504765 ;
     --color-nav: rgba(255, 255, 255, 0.5);
+    --color-fondo-personaje: rgba(248, 192, 118, 0.519);
     --texto-principal: "Caxton W01 Book Italic";
     --texto-secundario: "ITC Medea W01 Extra Bold";
 }
@@ -203,15 +204,27 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .fondoPersonaje{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 90%;
-    border-radius: 0 0 30px 30px;
+    border-radius: 30px;
     margin-top: 20px;
-    background-color: rgba(246, 205, 152, 0.318);
+    background-color: var(--color-fondo-personaje);
+}
+
+.fondoPersonaje::after{
+    content: "";
+    display: block;
+    bottom: -30px;
+    position: absolute;
+    border-top: 15px solid var(--color-fondo-personaje);
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent
 }
 .fondoPersonaje h2{
     margin: 20px auto 20px;
