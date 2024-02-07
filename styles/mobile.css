@@ -8,6 +8,8 @@
     --color-fondo-body: rgb(22, 22, 22);
     --color-nav: rgba(255, 255, 255, 0.5);
     --color-fondo-personaje: rgba(248, 192, 118, 0.519);
+    --color-sombra-personaje: rgb(59, 57, 57);
+    --color-sombra-texto: rgb(128, 128, 128);
     --texto-principal: "Caxton W01 Book Italic";
     --texto-secundario: "ITC Medea W01 Extra Bold";
 }
