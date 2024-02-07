@@ -6,7 +6,6 @@
     --color-dorado-oscuro: #7e6b58;
     --color-dorado-claro: #d5be9c;
     --color-fondo-body: rgb(22, 22, 22);
-    --color-sombra-personaje:  #76504765 ;
     --color-nav: rgba(255, 255, 255, 0.5);
     --color-fondo-personaje: rgba(248, 192, 118, 0.519);
     --texto-principal: "Caxton W01 Book Italic";
@@ -141,6 +140,9 @@ section img{
     font-size: 1.2rem;
     font-family: var(--texto-principal);
 }
+.capitulos h2{
+    margin-bottom: 40px;
+}
 .capitulos div:nth-of-type(n){
     justify-content: flex-start;
 }
@@ -238,7 +240,7 @@ a{
 .personaje h3{
     display: flex;
     justify-content: center;
-    margin: 20px auto 5px;
+    margin: 40px auto 5px;
     font-family: var(--texto-principal);
     font-size: 1.3rem;
     color: var(--color-dorado-claro);
@@ -304,6 +306,10 @@ a{
     }
     .piedepagina{
         font-size: 1.8rem;
+    }
+    .fondoPersonaje{
+        width: 75%;
+        margin-top: 40px;
     }
     .fondoPersonaje h2{
         font-size: 2.2rem;
