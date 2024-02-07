@@ -24,12 +24,36 @@
 .volver{
     font-size: 30px;
 }
-
 .piedepagina a{
     font-size: 30px;
     margin: 10px;
 }
-
+.personaje h2{
+    margin-top: 40px;
+    font-size: 3rem;
+    transition: linear 0.2s;
+    text-shadow: 8px 8px 5px rgb(59, 57, 57);
+}
+.personaje h3{
+    margin: 50px auto 0px;
+    font-size: 2.5rem;
+    text-shadow: 5px 5px 5px grey;
+}
+.personajeImg{
+    width: 100%;
+    height: 800px;
+    transition: linear 0.2s;
+}
+.fondoPersonaje:hover{
+    img{
+        height: 850px;
+        filter: drop-shadow(10px 10px 5px rgb(59, 57, 57));
+    } 
+    h2{
+        font-size: 3.5rem;
+        text-shadow: 8px 8px 5px grey;
+    }
+}
 @media screen and (min-width: 1390px){
     .hero{
         height: 100dvh;
@@ -49,29 +73,16 @@
     
 /* 
 
-.fondoPersonaje{
-    width: 40%;
-}
-
-.personaje h2{
-    margin: 50px auto 0;
-    font-size: 2.5rem;
-}
-
-.personajeImg{
-    width: 100%;
-    height: 800px;
-}
-
-.personajeImg:hover{
-    filter: drop-shadow(10px 10px 8px rgb(197, 195, 183));
-}
 
 
-.personaje h3{
-    margin: 50px auto 5px;
-    font-size: 2rem;
-}
+
+
+
+
+
+
+
+
 
 .personaje p{
     text-align: justify;
