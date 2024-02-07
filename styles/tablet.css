@@ -1,3 +1,15 @@
+.hero{
+    width: 100%;
+    background: url(../assets/giroModificado768.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@media screen and (min-width: 920px){
+    .hero{
+        height: 100dvh;
+    }
+}
 /* .hero{
     height: 70vh;
     width: 100%;
@@ -9,6 +21,7 @@
     justify-content: center;
     align-items:flex-end;
 }
+
 .hero h1{
 
     bottom: 50px;
