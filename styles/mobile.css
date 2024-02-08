@@ -18,6 +18,8 @@
 body{
     background-color: var(--color-fondo-body);
 }
+
+/* Barra scroll personalizada */
 body::-webkit-scrollbar{
     width: 20px;
     background: var(--color-dorado-claro);
@@ -29,6 +31,8 @@ body::-webkit-scrollbar-thumb{
     background-position: center;
     background-size: contain;
 }
+
+/* Giro */
 .hero{
     display: flex;
     justify-content: center;
@@ -43,7 +47,6 @@ body::-webkit-scrollbar-thumb{
 }
 
 /* Menú hamburguesa desplegable */
-
 nav{
     background-color: var(--color-nav);
     backdrop-filter: blur(1px);
@@ -56,6 +59,7 @@ nav{
     z-index: 10;
 }
 
+/* Iconos menú hamburguesa y cierre */
 .iconMenu{
     display: flex;
     align-items: center;
@@ -67,6 +71,7 @@ nav{
     color: var(--color-fondo-verde);
 }
 
+/* Menú horizontal */
 .linksMenu{
     display: none;
     list-style: none;
@@ -104,9 +109,9 @@ nav{
 #menu:target .close{
     display: block;
 }
-
 /* Fin menú hamburguesa */
 
+/* Título principal */
 .hero h1{
     display: inline-block;
     font-family: var(--texto-principal);
@@ -115,40 +120,52 @@ nav{
     animation-duration: 1.5s;
     text-shadow: 5px 5px 5px var(--color-sombra-texto);
 }
+
+/* Imágen Giro */
 .hero img{
     display: flex;
     width: 100%;
     object-fit: cover;
 }
 
+/* Comienzo main */
 section{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     color: var(--color-dorado-claro);
 }
 
+/* Contenedor imágenes enlaces a páginas */
 section div:first-of-type{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
+/* Subtítulos h2 */
 section h2{
     font-size: 30px;
     font-family: var(--texto-principal);
     margin: 30px auto 15px;
     text-shadow: 5px 5px 5px var(--color-sombra-texto);
 }
+
+/* Párrafos */
 section p{
     font-size: 18px;
     font-family: var(--texto-parrafo);
     margin: 0 15px 20px;
 }
+
+/* Imágenes enlaces a páginas */
 section img{
     max-width: 100px;
     box-shadow: 5px 5px 12px var(--color-dorado-oscuro);
     margin-bottom: 15px;
 }
+
+/* Contenedor sección de capítulos */
 .capitulos{
     display: flex;
     flex-direction: column;
@@ -156,66 +173,18 @@ section img{
     font-size: 1.2rem;
     font-family: var(--texto-principal);
 }
+
+/* Subtítulo sección de capítulos */
 .capitulos h2{
     margin-bottom: 40px;
 }
+
+/* Contenedor párrafos de capítulos */
 .capitulos div:nth-of-type(n){
     justify-content: flex-start;
 }
-/* Formulario */
 
-.formulario{
-    background-color: #7e6b58;
-    font-size: 1.25rem;
-}
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 15px;
-}
-input{
-    width: 85%;
-}
-textarea:first-of-type {
-    resize: none;
-    width: 85%;
-    height: 30vh;
-    box-sizing: border-box;
-}
-.boton{
-    width: 85%;
-    margin-bottom: 15px;
-}
-
-/* Fin formulario */
-
-.volver{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-    text-decoration: none;
-    font-family: var(--texto-principal);
-    color: var(--color-dorado-claro);
-}
-a{
-    font-size: 1.3rem;
-    color: var(--color-dorado-oscuro);
-    padding: 5px;
-}
-.piedepagina{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--color-fondo-verde);
-    padding: 30px 0;
-    font-size: 1rem;
-    color: var(--color-dorado-oscuro);
-}
-
-/* Personajes */
-
+/* Páginas de personajes */
 .personaje{
     display: flex;
     flex-direction: column;
@@ -223,6 +192,8 @@ a{
     align-items: center;
     position: relative;
 }
+
+/* Fondo del personaje */
 .fondoPersonaje{
     display: flex;
     flex-direction: column;
@@ -243,6 +214,8 @@ a{
     border-right: 15px solid transparent;
     border-left: 15px solid transparent
 }
+
+/* Subtítulo personaje */
 .fondoPersonaje h2{
     margin: 20px auto 20px;
     font-family: var(--texto-principal);
@@ -250,9 +223,13 @@ a{
     color: var(--color-dorado-claro);
     text-shadow: 8px 8px 5px var(--color-sombra-personaje);
 }
+
+/* Imágen del personaje */
 .personajeImg{
     width: 90%;
 }
+
+/* Sección de descripción del personaje */
 .personaje h3{
     display: flex;
     justify-content: center;
@@ -262,6 +239,7 @@ a{
     color: var(--color-dorado-claro);
     text-shadow: 3px 3px 5px var(--color-sombra-texto);
 }
+
 .personaje p{
     display: flex;
     justify-content: center;
@@ -273,6 +251,65 @@ a{
 }
 /* Fin personajes */
 
+/* Contenedor sección formulario */
+.formulario{
+    background-color: #7e6b58;
+    font-size: 1.25rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+input{
+    width: 85%;
+}
+
+textarea:first-of-type {
+    resize: none;
+    width: 85%;
+    height: 30vh;
+    box-sizing: border-box;
+}
+
+.boton{
+    width: 85%;
+    margin-bottom: 15px;
+}
+/* Fin formulario */
+
+/* Enlace a inicio de página */
+.volver{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    text-decoration: none;
+    font-family: var(--texto-principal);
+    color: var(--color-dorado-claro);
+}
+
+a{
+    font-size: 1.3rem;
+    color: var(--color-dorado-oscuro);
+    padding: 5px;
+}
+
+/* Pie de página */
+.pieDePagina{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-fondo-verde);
+    padding: 30px 0;
+    font-size: 1rem;
+    color: var(--color-dorado-oscuro);
+}
+
+/* Media Queryes */
 @media screen and (min-width: 400px){
     .hero{
         height: 50dvh;
@@ -294,7 +331,7 @@ a{
     .hero h1{
         font-size: 1.9rem;
     }
-    .piedepagina{
+    .pieDePagina{
         font-size: 1.5rem;
     }
     .fondoPersonaje h2{
@@ -322,7 +359,7 @@ a{
     section img{
         max-width: 200px;
     }
-    .piedepagina{
+    .pieDePagina{
         font-size: 1.8rem;
     }
     .fondoPersonaje{

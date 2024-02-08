@@ -1,3 +1,4 @@
+/* Giro */
 .hero{
     background: url(../assets/giroModificado1024.webp);
     background-size: contain;
@@ -5,9 +6,13 @@
     background-attachment: fixed;
     height: 75dvh;
 }
+
+/* Iconos del menú hamburguesa */
 .iconMenu{
     display: none;
 }
+
+/* Menú horizontal */
 .linksMenu{
     display: flex;
     justify-content: center;
@@ -15,55 +20,47 @@
     gap: 10px;
     width: 100%;
 }
+
 .linksMenu a{
     font-size: .3rem;
 }
+
+/* Título del giro */
 .hero h1{
     font-size: 3rem;
     text-shadow: 5px 5px 5px var(--color-sombra-texto);
 }
+/* Subtítulos de secciones */
 section h2{
     font-size: 2.5rem;
 }
+
+/* Contenedor de imágenes de enlaces a otras páginas */
 main section:nth-child(2) div{
     margin: 40px 0;
     height: 300px;
 }
+
+/* Efecto hover sobre imágenes de enlaces a otras páginas */
 section img:hover{
     transition: linear 0.1s;
     max-width: 210px;
     box-shadow: 8px 8px 12px var(--color-dorado-oscuro);
 }
-.volver{
-    font-size: 30px;
-}
-.piedepagina a{
-    font-size: 30px;
-    margin: 10px;
-}
+
+/* Fondo del personaje */
 .fondoPersonaje{
     height: 110dvh;
 }
-.personaje h2{
-    margin-top: 40px;
-    font-size: 3rem;
-    transition: linear 0.2s;
-    text-shadow: 8px 8px 5px var(--color-sombra-personaje);
-}
-.personaje h3{
-    margin: 50px auto 0px;
-    font-size: 2.5rem;
-    text-shadow: 5px 5px 5px var(--color-sombra-texto);
-}
-.personaje p{
-    font-size: 18px;
-    margin-top: 50px;
-}
+
+/* Imágen del personaje */
 .personajeImg{
     width: 100%;
     height: 800px;
     transition: linear 0.2s;
 }
+
+/* Efecto hover sobre imágen y nombre del personaje */
 .fondoPersonaje:hover{
     img{
         height: 850px;
@@ -74,6 +71,39 @@ section img:hover{
         text-shadow: 8px 8px 5px var(--color-sombra-texto);
     }
 }
+
+/* Subtítulo y nombre de personajes */
+.personaje h2{
+    margin-top: 40px;
+    font-size: 3rem;
+    transition: linear 0.2s;
+    text-shadow: 8px 8px 5px var(--color-sombra-personaje);
+}
+
+/* Sección de descripción del personaje */
+.personaje h3{
+    margin: 50px auto 0px;
+    font-size: 2.5rem;
+    text-shadow: 5px 5px 5px var(--color-sombra-texto);
+}
+
+.personaje p{
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+/* Enlace al inicio de la página */
+.volver{
+    font-size: 30px;
+}
+
+/* Pie de página */
+.pieDePagina a{
+    font-size: 30px;
+    margin: 10px;
+}
+
+/* Media Queryes */
 @media screen and (min-width: 1390px){
     .hero{
         height: 100dvh;
@@ -82,6 +112,7 @@ section img:hover{
         gap: 20px;
     }
 }
+
 @media screen and (min-width: 1800px){
     .hero h1{
         font-size: 3.5rem;
@@ -90,24 +121,3 @@ section img:hover{
         max-width: 100%;
     }
 }
-    
-/* 
-
-
-
-
-
-
-
-
-
-
-
-
-.personaje p{
-    text-align: justify;
-    margin: 20px 40px;
-    font-size: 1.2rem;
-}
-
- */
