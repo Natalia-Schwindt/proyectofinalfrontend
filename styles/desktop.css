@@ -25,6 +25,10 @@
 section h2{
     font-size: 2.5rem;
 }
+main section:nth-child(2) div{
+    margin: 40px 0;
+    height: 300px;
+}
 section img:hover{
     transition: linear 0.1s;
     max-width: 210px;
@@ -37,6 +41,9 @@ section img:hover{
     font-size: 30px;
     margin: 10px;
 }
+.fondoPersonaje{
+    height: 110dvh;
+}
 .personaje h2{
     margin-top: 40px;
     font-size: 3rem;
@@ -47,6 +54,10 @@ section img:hover{
     margin: 50px auto 0px;
     font-size: 2.5rem;
     text-shadow: 5px 5px 5px var(--color-sombra-texto);
+}
+.personaje p{
+    font-size: 18px;
+    margin-top: 50px;
 }
 .personajeImg{
     width: 100%;
