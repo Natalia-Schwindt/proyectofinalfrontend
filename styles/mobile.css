@@ -18,6 +18,17 @@
 body{
     background-color: var(--color-fondo-body);
 }
+body::-webkit-scrollbar{
+    width: 20px;
+    background: var(--color-dorado-claro);
+    border-radius: 2em;
+}
+body::-webkit-scrollbar-thumb{
+    background-image: url(../assets/espejo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
 .hero{
     display: flex;
     justify-content: center;
